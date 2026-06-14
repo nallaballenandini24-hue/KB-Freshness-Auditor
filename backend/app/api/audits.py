@@ -1,6 +1,6 @@
 """Audit API routes"""
 import logging
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Path
 import asyncio
 
 from app.services.audit_service import AuditService
@@ -66,7 +66,7 @@ async def get_article_audits(
 
 @router.get("/status/{status}")
 async def get_audits_by_status(
-    status: str = Query(..., regex="^(fresh|warning|stale)$"),
+    status: str = Path(..., pattern="^(fresh|warning|stale)$"),
     limit: int = Query(10, ge=1, le=100),
     offset: int = Query(0, ge=0),
     service: AuditService = Depends(get_audit_service),
