@@ -495,3 +495,9 @@ This project demonstrates:
 - This project was tested with Python 3.11/3.12. On newer Python versions (like 3.14), some packages (pydantic, sqlalchemy) may need to be upgraded.
 - The psycopg2-binary package is not required since we use SQLite.
 - AI-generated drafts are suggestions only and should be reviewed by a human before publishing.
+
+## Demo Video
+
+Watch the project demonstration here:
+
+[🎥 KB Freshness Auditor Demo Video](https://drive.google.com/file/d/1Zcd0MqfGPw6qgZf7Z0wEdT7yvbadaE0e/view?usp=sharing)
