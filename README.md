@@ -7,10 +7,10 @@ A production-grade enterprise knowledge base auditing system designed for Servic
 **Team Name:** KB-Freshness-Auditor  
 
 **Team Members:**
-- Nandini 
-- Jyoshan
-- Vyshanavi
-- Mamatha
+- Nallaballe Nandini
+- Nayanavari Jyoshna
+- Neravati Vyshnavi
+- Mukkamalla Mamatha Reddy
 
 A production-grade enterprise knowledge base auditing system...
 
