@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB Freshness Auditor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex" style="height: 100vh;">
+        <!-- Sidebar -->
+        <nav class="navbar-nav bg-dark text-white p-0" style="width: 260px; overflow-y: auto;">
+            <div class="p-4">
+                <h5 class="mb-4">
+                    <i class="bi bi-file-earmark-check"></i> KB Auditor
+                </h5>
+            </div>
+            <ul class="nav flex-column px-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="/" id="nav-dashboard">
+                        <i class="bi bi-speedometer2"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/knowledge-base" id="nav-kb">
+                        <i class="bi bi-book"></i> Knowledge Base
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/tickets" id="nav-tickets">
+                        <i class="bi bi-ticket"></i> Tickets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/audit" id="nav-audit">
+                        <i class="bi bi-gear"></i> Freshness Audit
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/recommendations" id="nav-recommendations">
+                        <i class="bi bi-lightbulb"></i> AI Recommendations
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="flex-grow-1 d-flex flex-column overflow-hidden">
+            <!-- Header -->
+            <header class="bg-white border-bottom px-4 py-3 d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 id="page-title" class="h4 mb-0">Dashboard</h1>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-sm btn-outline-secondary" id="refresh-btn">
+                        <i class="bi bi-arrow-clockwise"></i> Refresh
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <main class="flex-grow-1 overflow-y-auto bg-light p-4">
+                <div id="content-area"></div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chart.js/3.9.1/chart.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+    <script src="/static/js/knowledge-base.js"></script>
+    <script src="/static/js/audit.js"></script>
+</body>
+</html>
