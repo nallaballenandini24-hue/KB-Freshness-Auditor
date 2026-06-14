@@ -2,6 +2,18 @@
 
 A production-grade enterprise knowledge base auditing system designed for Service Desk teams to automatically identify stale KB articles and generate AI-powered update recommendations.
 
+## Team Information
+
+**Team Name:** KB-Freshness-Auditor  
+
+**Team Members:**
+- Nandini 
+- Jyoshan
+- Vyshanavi
+- Mamatha
+
+A production-grade enterprise knowledge base auditing system...
+
 ## Overview
 
 Organizations maintain hundreds or thousands of Knowledge Base articles that become outdated over time, causing repeated support tickets and poor customer experience. The KB Freshness Auditor automatically:
