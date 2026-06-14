@@ -472,3 +472,14 @@ For issues and support:
 - Groq LLM integration
 - MinIO document storage
 - CSV ticket import
+## AI Capability Demonstrated
+
+This project demonstrates:
+- **Agent Loop**: The system reads KB articles, checks their age and related tickets, sends them to an AI model, gets back a draft, and saves the result.
+- **External API Integration**: We use the Groq AI API to generate the article suggestions.
+
+## Assumptions & Limitations
+
+- This project was tested with Python 3.11/3.12. On newer Python versions (like 3.14), some packages (pydantic, sqlalchemy) may need to be upgraded.
+- The psycopg2-binary package is not required since we use SQLite.
+- AI-generated drafts are suggestions only and should be reviewed by a human before publishing.
